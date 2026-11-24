@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tiq engine :: The Algotiqa trading platform</title>
+    <link rel="canonical" href="https://github.com/algotiqa/algotiqa/0.9.6/tiq/main.html">
+    <meta name="generator" content="Antora 3.2.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://github.com/algotiqa">The Algotiqa trading platform</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://github.com/algotiqa/install/releases">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="algotiqa" data-version="0.9.6">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../home.html">Algotiqa</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Tutorials</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../tutorial/video-tutorial.html">Video tutorials</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation and deployment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deployment/local.html">Local installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../deployment/cluster.html">Cluster deployment</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../concept/main.html">Core concepts</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">User guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Connections</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../user/connection/list.html">Listing connections</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Portfolios</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../user/portfolio/list.html">Listing portfolios</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../user/portfolio/create.html">Creating new portfolios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Exporting data</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../user/exporting-data/tradestation.html">Exporting data from Tradestation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Tools</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../user/tool/market-analysis.html">Market analysis</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../admin/architecture.html">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../admin/keycloak.html">Keycloak setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../admin/database.html">Database structure</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="main.html">Tiq engine</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../development/main.html">Development reference</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Algotiqa</span>
+    <span class="version">0.9.6</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../home.html">Algotiqa</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../home.html">0.9.6</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../home.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../home.html">Algotiqa</a></li>
+    <li><a href="main.html">Tiq engine</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Tiq engine</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Tiq is the Algotiqa&#8217;s trading system programming language.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_types"><a class="anchor" href="#_data_types"></a>Data types</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_basic_types"><a class="anchor" href="#_basic_types"></a>Basic types</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">int</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64 bit signed integer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">real</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">64 bit floating point number</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">bool</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Boolean value</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">string</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unicode string</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time of the day in the hh:mm format with hh=0..23 and mm=0..59</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Generic date, in the YYYY-MM-DD format</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">timeseries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Series of datapoints equally spaced in time. Used to represent prices</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">enum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enumeration of element</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">list</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Collection of ordered objects</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">map</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Association between keys and values</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">class</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Class object defining a complex structure</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">error</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">This is an alias for a string type and defines an error condition</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">a = 5
+b = "test"
+c = false
+
+//--- All together
+
+a, b, c = 5, "test", false</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nulls"><a class="anchor" href="#_nulls"></a>Nulls</h3>
+<div class="paragraph">
+<p>A <strong>null</strong> is a special value.</p>
+</div>
+<div class="paragraph">
+<p>On a boolean condition, a null value is considered as <strong>false</strong>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_containers"><a class="anchor" href="#_containers"></a>Containers</h3>
+<div class="paragraph">
+<p>Containers are types that contain elements inside them. These elements can be ordered (lists) or unordered (maps, sets)</p>
+</div>
+<div class="sect3">
+<h4 id="_lists"><a class="anchor" href="#_lists"></a>Lists</h4>
+<div class="paragraph">
+<p>Represents a list of elements of any type (basic, container, class or null).</p>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="listingblock">
+<div class="title">Example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">a = list of (int)
+a = [ 1, 2, 3, 4, 5 ]
+a.add(5)
+a.add(null)   ??????
+a.size()
+a.clear()
+a.deleteAt(index)
+a.merge(b)
+a list(int)
+v = a[index]
+a[index] = v
+size(a)
+append(a,v)
+delete(a, index)
+clear(a)
+zero() : set all values to zero (0, 0.0, false, "", null????)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_maps"><a class="anchor" href="#_maps"></a>Maps</h4>
+<div class="paragraph">
+<p>Allows to store (key,value) pairs.
+- Keys can be string or int
+- Values can be of any type (basic, container, class or null)</p>
+</div>
+<div class="paragraph">
+<p>Examples:</p>
+</div>
+<div class="listingblock">
+<div class="title">Example</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">a = map of string,int
+a.get(key)
+a.set(key,value)
+a.contains(key)
+a.size()
+a.clear()
+a.delete(key)
+a.merge(b)
+a map(string,int)
+v,ok = a[key]
+a[key] = value
+size(a)
+clear(a)
+delete(a, key)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sets"><a class="anchor" href="#_sets"></a>Sets</h4>
+
+</div>
+</div>
+<div class="sect2">
+<h3 id="_enums"><a class="anchor" href="#_enums"></a>Enums</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">enum Color {
+    Red(), Green(), Blue()
+}
+
+enum Level {
+    Info("info"), Warning("warn"), Error("err")
+}
+
+enum HttpCode {
+    NotFound(404), Forbidden(403)
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_classes"><a class="anchor" href="#_classes"></a>Classes</h3>
+
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conditions"><a class="anchor" href="#_conditions"></a>Conditions</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">if &lt;condition&gt; { statement* }
+[else if &lt;condition&gt; { statement* }]*
+[else { statement* }]</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">switch myVar {
+ case &lt;value&gt;:
+    statement*
+ case &lt;value&gt;:
+    statement*
+ default:
+    statement*
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_loops"><a class="anchor" href="#_loops"></a>Loops</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_for_loops"><a class="anchor" href="#_for_loops"></a>For loops</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">for e in listObject {
+    e.index
+    e.value
+    e.isLast
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">for e in mapObject {
+    e.key
+    e.value
+    e.isLast
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">for i=0; i&lt;5; i++ {
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_while"><a class="anchor" href="#_while"></a>While</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">while &lt;condition&gt; {
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_functions_and_methods"><a class="anchor" href="#_functions_and_methods"></a>Functions and methods</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Parameters are passed by reference (also for basic types?)</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_structure"><a class="anchor" href="#_structure"></a>Structure</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_file_structure"><a class="anchor" href="#_file_structure"></a>File structure</h3>
+<div class="paragraph">
+<p>Given a folder (i.e. the strategy&#8217;s code folder), all *.bfl files into these folders are loaded.
+Subfolders are scan recursively.</p>
+</div>
+<div class="paragraph">
+<p>Each source file will have the following structure:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Class definitions</p>
+</li>
+<li>
+<p>Variable definitions</p>
+</li>
+<li>
+<p>Function definitions</p>
+</li>
+<li>
+<p>Strategy definition</p>
+</li>
+<li>
+<p>Interface definition</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_packages"><a class="anchor" href="#_packages"></a>Packages</h3>
+<div class="paragraph">
+<p>Each strategy code will land into the <strong>default</strong> package.</p>
+</div>
+<div class="paragraph">
+<p>Users will have the possibility to create other packages. If a user will use an existing system package
+the user&#8217;s package will have priority when resolving functions. This allows users to patch or improve the
+system packages.</p>
+</div>
+<div class="paragraph">
+<p>There will be the following system packages: os, io, math. An administrator will have the possibility
+to install new versions of these packages.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_runtime_environment"><a class="anchor" href="#_runtime_environment"></a>Runtime environment</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_runtime_variables"><a class="anchor" href="#_runtime_variables"></a>Runtime variables</h3>
+<div class="paragraph">
+<p>The following variables will be available to a strategy:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>open, close, high, low: time series indicating the current price values</p>
+</li>
+<li>
+<p>openS, closeS, highS, lowS: time series for session related values (typically 1 value per day)</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_the_bar_object"><a class="anchor" href="#_the_bar_object"></a>The <strong>bar</strong> object</h4>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">index</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Starts from 0 and represents the number of bars that has been processed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">open</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">close</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">high</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">low</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">openS</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">closeS</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">highS</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lowS</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">isSessionStarted</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicates if this bar is the first bar of a new session</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">isSessionEnded</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indicates if this bar is the last bar of the session</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_the_trade_object"><a class="anchor" href="#_the_trade_object"></a>The <strong>trade</strong> object</h4>
+<div class="paragraph">
+<p>Represents the current trade and contains the following properties and methods:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">position</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Can be positive (for long) or negative (for short). The quantity represents the number of contracts</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">isLong</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">isShort</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">isFlat</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">profit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Current profit of the trade. Can be positive (gain) or negative (loss)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">maxProfit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max profit achieved by the trade</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Methods:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">close()</dt>
+<dd>
+<p>Closes the open position, buying or selling all contracts</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_events"><a class="anchor" href="#_events"></a>Events</h3>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">onTradeEnter()</dt>
+<dd>
+<p>called when a new trade has started</p>
+</dd>
+<dt class="hdlist1">onTradeExit()</dt>
+<dd>
+<p>called when exiting from a trade. Can be used to export trades</p>
+</dd>
+<dt class="hdlist1">onSessionStart()</dt>
+<dd>
+<p>x</p>
+</dd>
+<dt class="hdlist1">onSessionEnd()</dt>
+<dd>
+<p>x</p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_future"><a class="anchor" href="#_future"></a>Future</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Possibility to apply a transformation on input prices</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_assembly"><a class="anchor" href="#_assembly"></a>Assembly</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Instruction</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">add_i ri, rj, rk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Adds 2 integers</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sub_i ri, rj, rk</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mult_i ri, rj, rk</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">add_f ri, rj, rk</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">sub_f ri, rj, rk</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">mult_f ri, rj, rk</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lesst_i ri, rj, rk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compares ri and rj. Result (less than) is put into rk (bool)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">equ_i ri, rj, rk</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">lesst_f ri, rj, rk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compares ri and rj. Result (less than) is put into rk (bool)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">equ_f ri, rj, rk</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">conv_if ri, rj</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Converts ri into an integer, storing the result into rj (float)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">const_i num, ri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loads the integer constant num into ri</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">const_s string, ri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loads a string into ri (ri = constPool[index-of-string])</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">const_f value, ri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loads a float into ri ( ri = constPool[index-of-value] )</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">call f(), ri, rj</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Calls function f (from the constPool). Ri indicates from which register the parameters are stored (these are from ri to ri+n-1 where n=num of params). Rj indicates from which register the results will be stored. Creates a new StackFrame and adds it to the call stack</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ret ri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Returns from a function call. Returns values are stored from ri ti ri+m-1 where m=num of results. Pops a StackFrame from the stack</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jmp a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jumps to address a</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jmp_t ri, a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jumps to a if ri=true</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">jmp_f ri, a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jumps to a if ri=false</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gload a, ri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loads globals[a] into ri</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">gstore ri, a</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Stores ri into globals[a]</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">struct ri, n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ri = new struct with n field slots</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">print ri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prints ri to standard out</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">halt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Halts program execution (exits from the virtual machine)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

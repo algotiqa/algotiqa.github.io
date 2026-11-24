@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Admonition :: The Algotiqa trading platform</title>
+    <link rel="canonical" href="https://github.com/algotiqa/algotiqa/0.9.6/admonition.html">
+    <meta name="generator" content="Antora 3.2.3">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://github.com/algotiqa">The Algotiqa trading platform</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://github.com/algotiqa/install/releases">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="algotiqa" data-version="0.9.6">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="home.html">Algotiqa</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Tutorials</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="tutorial/video-tutorial.html">Video tutorials</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation and deployment</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="deployment/local.html">Local installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="deployment/cluster.html">Cluster deployment</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="concept/main.html">Core concepts</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">User guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Connections</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="user/connection/list.html">Listing connections</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Portfolios</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="user/portfolio/list.html">Listing portfolios</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="user/portfolio/create.html">Creating new portfolios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Exporting data</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="user/exporting-data/tradestation.html">Exporting data from Tradestation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Tools</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="user/tool/market-analysis.html">Market analysis</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="admin/architecture.html">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="admin/keycloak.html">Keycloak setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="admin/database.html">Database structure</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="tiq/main.html">Tiq engine</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="development/main.html">Development reference</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Algotiqa</span>
+    <span class="version">0.9.6</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="home.html">Algotiqa</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="home.html">0.9.6</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="home.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="home.html">Algotiqa</a></li>
+    <li><a href="admonition.html">Admonition</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Admonition</h1>
+<div class="sect1">
+<h2 id="_basic_admonition"><a class="anchor" href="#_basic_admonition"></a>Basic admonition</h2>
+<div class="sectionbody">
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-caution" title="Caution"></i>
+</td>
+<td class="content">
+Don&#8217;t stick forks in electric sockets.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+After someone sticks a fork in a socket, you&#8217;ll need to reset the circuit in the breaker box in the dark and scary basement.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+Never go into the basement.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+A monster lives in the basement.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If you go into the basement, see if you can find Kenny&#8217;s orange parka.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_complex_admonition"><a class="anchor" href="#_complex_admonition"></a>Complex admonition</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="title">Example block masquerading as an admonition</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">[IMPORTANT]
+.Optional title
+====
+Use an example block to create an admonition that contains complex content, such as (but not limited to):
+
+* Lists
+* Multiple paragraphs
+* Source code
+* Images
+====</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="title">Optional title</div>
+<div class="paragraph">
+<p>Use an example block to create an admonition that contains complex content, such as (but not limited to):</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Lists</p>
+</li>
+<li>
+<p>Multiple paragraphs</p>
+</li>
+<li>
+<p>Source code</p>
+</li>
+<li>
+<p>Images</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sidebar_block"><a class="anchor" href="#_sidebar_block"></a>Sidebar block</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A sidebar can be titled and contain any type of content such as source code and images.</p>
+</div>
+<div class="sidebarblock">
+<div class="content">
+<div class="title">Optional title of sidebar</div>
+<div class="paragraph">
+<p>Sidebars are used to visually separate short, auxiliary bits of content that supplement the main text.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_user_interface_macros"><a class="anchor" href="#_user_interface_macros"></a>User Interface Macros</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Asciidoctor has three user interface (UI) macros:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Button <code>btn:[]</code></p>
+</li>
+<li>
+<p>Keyboard <code>kbd:[]</code></p>
+</li>
+<li>
+<p>Menu <code>menu:[]</code></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The <code>:experimental:</code> attribute must be set in the document header, component version descriptor (<em>antora.yml</em>), or globally in your Antora playbook (<em>antora-playbook.yml</em>) to enable UI macros.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_button"><a class="anchor" href="#_button"></a>Button</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Communicate that a user should press a button with the button macro.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 1. Result</div>
+<div class="content">
+<div class="paragraph">
+<p>Press the btn:[Submit] button when you are finished the survey.</p>
+</div>
+<div class="paragraph">
+<p>Select a file in the file navigator and click btn:[Open].</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_keyboard"><a class="anchor" href="#_keyboard"></a>Keyboard</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Create keyboard shortcuts with the keyboard macro.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 2. Result</div>
+<div class="content">
+<div class="paragraph">
+<p>Press kbd:[esc] to exit insert mode.</p>
+</div>
+<div class="paragraph">
+<p>Use the shortcut kbd:[Ctrl+T] to open a new tab in your browser.</p>
+</div>
+<div class="paragraph">
+<p>kbd:[Ctrl+Shift+N] will open a new incognito window.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_menu"><a class="anchor" href="#_menu"></a>Menu</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Show readers how to select a menu item with the menu macro.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 3. Result</div>
+<div class="content">
+<div class="paragraph">
+<p>To save the file, select menu:File[Save].</p>
+</div>
+<div class="paragraph">
+<p>Select menu:View[Zoom &gt; Reset] to reset the zoom level to the default setting.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_bold_and_italic"><a class="anchor" href="#_bold_and_italic"></a>Bold and italic</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can bold and italic entire phrases, a word, and characters in a word.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 4. Result</div>
+<div class="content">
+<div class="paragraph">
+<p><strong>bold phrase</strong> &amp; <strong>char</strong>acter<strong>s</strong></p>
+</div>
+<div class="paragraph">
+<p><em>italic phrase</em> &amp; <em>char</em>acter<em>s</em></p>
+</div>
+<div class="paragraph">
+<p><strong><em>bold italic phrase</em></strong> &amp; <strong><em>char</em></strong>acter<strong><em>s</em></strong></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_monospace"><a class="anchor" href="#_monospace"></a>Monospace</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can monospace entire phrases, a word, and characters in a word.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 5. Result</div>
+<div class="content">
+<div class="paragraph">
+<p><code>monospace phrase</code> &amp; <code>char</code>acter<code>s</code></p>
+</div>
+<div class="paragraph">
+<p><code><strong>monospace bold phrase</strong></code> &amp; <code><strong>char</strong></code>acter<code><strong>s</strong></code></p>
+</div>
+<div class="paragraph">
+<p><code><em>monospace italic phrase</em></code> &amp; <code><em>char</em></code>acter<code><em>s</em></code></p>
+</div>
+<div class="paragraph">
+<p><code><strong><em>monospace bold italic phrase</em></strong></code> &amp;
+<code><strong><em>char</em></strong></code>acter<code><strong><em>s</em></strong></code></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_highlight"><a class="anchor" href="#_highlight"></a>Highlight</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can highlight entire phrases, a word, and characters in a word.</p>
+</div>
+<div class="exampleblock">
+<div class="title">Example 6. Result</div>
+<div class="content">
+<div class="paragraph">
+<p>Let&#8217;s <mark>highlight this phrase</mark> and part of th<mark>is</mark>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_special_characters_and_symbols"><a class="anchor" href="#_special_characters_and_symbols"></a>Special Characters and Symbols</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Special character and symbol replacement is built into Asciidoctor.</p>
+</div>
+<div class="paragraph">
+<p>During conversion, the characters in the table below are replaced with the appropriate character or Unicode entity.
+Replacement of special characters and symbols occurs in all inline and block elements except for comments and certain passthroughs.
+The three special characters, <code>&lt;</code>, <code>&gt;</code>, and <code>&amp;</code>, are always replaced first.</p>
+</div>
+<div class="paragraph">
+<p>HTML and XML character entities as well as decimal and hexadecimal Unicode code point references are also recognized and replaced.</p>
+</div>
+<div class="paragraph">
+<p>For example, to produce the <code>&#167;</code> symbol you can use <code>&amp;#167;</code>, <code>&amp;#x00A7;</code>, or <code>&amp;sect;</code> (HTML only).
+When the document is processed, the replacements substitution will replace the section symbol reference, regardless of whether it is a character entity reference or a numeric character reference, with <code>&amp;#167;</code>.
+In turn, <code>&amp;#167;</code> will display as <code>&#167;</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_special_character_and_symbol_syntax"><a class="anchor" href="#_special_character_and_symbol_syntax"></a>Special character and symbol syntax</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 28.5714%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 28.5715%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-center valign-top">Syntax</th>
+<th class="tableblock halign-center valign-top">Replacement</th>
+<th class="tableblock halign-center valign-top">Rendered</th>
+<th class="tableblock halign-left valign-top">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ampersand</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>&amp;</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;amp;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Apostrophe, curved</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>Sam's</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Sam&amp;#8217;s</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Sam&#8217;s</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The vertical form apostrophe is replaced with the curved form apostrophe.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Copyright</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>(C)</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;#169;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#169;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ellipses</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>...</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;#8230;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#8230;&#8203;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Em dash</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>--</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;#8212;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#8201;&#8212;&#8201;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Only replaced if between two word characters, between a word character and a line boundary, or flanked by spaces.</p>
+<p class="tableblock">When flanked by space characters (e.g., <code>a -- b</code>), the normal spaces are replaced by thin spaces (&amp;#8201;).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Greater than</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>&gt;</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;gt;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&gt;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Left double arrow</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>&lt;=</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;#8656;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#8656;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Left single arrow</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>&lt;-</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;#8592;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#8592;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Less than</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>&lt;</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;lt;</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Registered</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>(R)</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;#174;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#174;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Right double arrow</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>=&gt;</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;#8658;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#8658;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Right single arrow</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>-&gt;</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;#8594;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#8594;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Trademark</p></td>
+<td class="tableblock halign-center valign-top"><div class="literal"><pre>(TM)</pre></div></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&amp;#8482;</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">&#8482;</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ordered_list"><a class="anchor" href="#_ordered_list"></a>Ordered list</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<div class="title">Optional title of list</div>
+<ol class="arabic">
+<li>
+<p>Step 1</p>
+</li>
+<li>
+<p>Step 2</p>
+</li>
+<li>
+<p>Step 3</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nested_ordered_list"><a class="anchor" href="#_nested_ordered_list"></a>Nested ordered list</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Step 1</p>
+</li>
+<li>
+<p>Step 2</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Step 2a</p>
+</li>
+<li>
+<p>Step 2b</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Sub-step 2b</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Step 3</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_unordered_list"><a class="anchor" href="#_unordered_list"></a>Unordered list</h2>
+<div class="sectionbody">
+<div class="ulist">
+<div class="title">Optional title of list</div>
+<ul>
+<li>
+<p>Item A</p>
+</li>
+<li>
+<p>Item B</p>
+</li>
+<li>
+<p>Item C</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
