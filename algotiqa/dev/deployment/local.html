@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Local installation :: The Algotiqa trading platform</title>
+    <link rel="canonical" href="https://algotiqa.github.io/algotiqa/dev/deployment/local.html">
+    <meta name="generator" content="Antora 3.2.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://algotiqa.github.io">The Algotiqa trading platform</a>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://github.com/algotiqa/install/releases">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="algotiqa" data-version="dev">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../home.html">Algotiqa</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Tutorials</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../tutorial/video-tutorial.html">Video tutorials</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Installation and deployment</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="local.html">Local installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="cluster.html">Cluster deployment</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../concept/main.html">Core concepts</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">User guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Connections</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../user/connection/list.html">Listing connections</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Portfolios</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../user/portfolio/list.html">Listing portfolios</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../user/portfolio/create.html">Creating new portfolios</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Exporting data</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../user/exporting-data/tradestation.html">Exporting data from Tradestation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Tools</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../user/tool/market-analysis.html">Market analysis</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Administration guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../admin/architecture.html">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../admin/keycloak.html">Keycloak setup</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../admin/database.html">Database structure</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../tiq/main.html">Tiq engine</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../development/main.html">Development reference</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Algotiqa</span>
+    <span class="version">dev</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../home.html">Algotiqa</a></div>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../home.html">dev</a>
+        </li>
+        <li class="version">
+          <a href="../../0.9.6/home.html">0.9.6</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../home.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../home.html">Algotiqa</a></li>
+    <li>Installation and deployment</li>
+    <li><a href="local.html">Local installation</a></li>
+  </ul>
+</nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">dev</button>
+  <div class="version-menu">
+    <a class="version is-current" href="local.html">dev</a>
+    <a class="version" href="../../0.9.6/deployment/local.html">0.9.6</a>
+  </div>
+</div>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Local installation</h1>
+<div class="sect1">
+<h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To run the platform, either <code>docker</code> or <code>podman</code> needs to be locally installed together with its <code>compose</code> package.
+The requirements are below (assuming a single user):</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Requirement</th>
+<th class="tableblock halign-left valign-top">Minimal</th>
+<th class="tableblock halign-left valign-top">Recommended</th>
+<th class="tableblock halign-left valign-top">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Memory</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initially, the platform can even start with 8GB or less but as soon as more features are used, the platform will start to eat memory</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Disk space</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100GB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The minimum disk space is sized for around 12 markets (data products) and around 30 trading systems</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The local system must be able to resolve the <code>algotiqa</code> hostname to <code>127.0.0.1</code>. This can be done adding <code>algotiqa</code> to the line where <code>127.0.0.1</code> is defined in the <code>hosts</code> file. The location of this file depends on the system:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Linux: the file is <code>/etc/hosts</code></p>
+</li>
+<li>
+<p>Windows: the file is <code>C:\Windows\System32\drivers\etc\hosts</code></p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+A starting <strong>#</strong> character denotes a comment, so the line <code># 127.0.0.1 algotiqa</code> is not valid.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_downloading_the_installer"><a class="anchor" href="#_downloading_the_installer"></a>Downloading the installer</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The installer can be downloaded from <code><a href="https://github.com/algotiqa/install/releases/" class="bare">https://github.com/algotiqa/install/releases/</a></code> . It is very small and after downloading simply unzip it into any folder. Make sure that the disk you select has enough free space.</p>
+</div>
+<div class="sect2">
+<h3 id="_notes_on_linux"><a class="anchor" href="#_notes_on_linux"></a>Notes on Linux</h3>
+<div class="paragraph">
+<p>When using Linux, it is important to extract the package maintaining the original file permission. Assuming that the installer 0.9.2 has been downloaded into the current folder, you can do that issuing the following commands:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">mkdir algotiqa-installer
+cd algotiqa-installer
+tar xzf ../algotiqa-installer-v0.9.2.tar.gz -p</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_starting_the_platform"><a class="anchor" href="#_starting_the_platform"></a>Starting the platform</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you are using the command line interface, open a terminal inside the unzipped folder and issue:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">docker compose up -d
+# or
+podman compose up -d</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The first boot can take a few minutes as it:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>downloads the containers</p>
+</li>
+<li>
+<p>creates and fills the databases (migration containers)</p>
+</li>
+<li>
+<p>imports the Keycloak realm</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If you are using Podman, you may consider to also install Podman Desktop (<code><a href="https://podman-desktop.io/" class="bare">https://podman-desktop.io/</a></code>) to view and manage the containers. Using this tool, when the platform is fully started you should see a page similar to the following one:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/deployment/local/podman-desktop.png" alt="podman desktop">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_accessing_the_user_interface"><a class="anchor" href="#_accessing_the_user_interface"></a>Accessing the user interface</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h3>
+<div class="paragraph">
+<p>Pointing your browser at <code><a href="https://algotiqa:8443/" class="bare">https://algotiqa:8443/</a></code>, you should see the login page now.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Before registering and accessing the platform, there is a mandatory configuration step to follow. Please. read on.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You need to log in into Keycloak&#8217;s administration console to generate the communication token between services. Point your browser at <code><a href="https://algotiqa:8443/auth/" class="bare">https://algotiqa:8443/auth/</a></code> (default administration credentials are <code>admin</code> / <code>admin</code>).</p>
+</div>
+<div class="paragraph">
+<p>In the main page, click <strong>Manage realms</strong> on the left menu and then click on the <strong>algotiqa</strong> link in the middle of the page, as shown below:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/deployment/local/keycloak-realm.png" alt="keycloak realm">
+</div>
+</div>
+<div class="paragraph">
+<p>The Algotiqa&#8217;s realm is now selected. Click <strong>Clients</strong> on the left menu and <strong>algotiqa-backend</strong> in the middle of the page, as shown below:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/deployment/local/keycloak-clients.png" alt="keycloak clients">
+</div>
+</div>
+<div class="paragraph">
+<p>Now, click <strong>Credentials</strong> and then the <strong>Regenerate</strong> button:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/deployment/local/keycloak-backend.png" alt="keycloak backend">
+</div>
+</div>
+<div class="paragraph">
+<p>Click <strong>Ok</strong> when the dialog "Regenerate secret for this client?" will pop up. At this point, the <strong>Client Secret</strong> is populated with the new token, but it is not visible. Click the eye button to make it visible and then the paste button to copy it into the clipboard. See below:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/deployment/local/keycloak-regenerate.png" alt="keycloak regenerate">
+</div>
+</div>
+<div class="paragraph">
+<p>Now, go into the folder where the installer has been unzipped and edit the <code>.env</code> file. You have to set the token for the <strong>CLIENTSECRET</strong> variable:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/deployment/local/edit-env.png" alt="edit env">
+</div>
+</div>
+<div class="paragraph">
+<p>The configuration is complete, just restart the platform (stop + start).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_opening_the_platforms_page"><a class="anchor" href="#_opening_the_platforms_page"></a>Opening the platform&#8217;s page</h3>
+<div class="paragraph">
+<p>Open the <code><a href="https://algotiqa:8443/" class="bare">https://algotiqa:8443/</a></code> link to see the login page. The first time, you will need to register a new account.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/deployment/local/algotiqa-login.png" alt="algotiqa login">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_stopping_the_platform"><a class="anchor" href="#_stopping_the_platform"></a>Stopping the platform</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To stop the platform, simply enter the folder where the installer is located and issue:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">docker compose down</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_some_considerations_on_podman"><a class="anchor" href="#_some_considerations_on_podman"></a>Some considerations on Podman</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When Algotiqa is running on a Linux remote host, some extra care must be considered when using Podman. By default (at least on Ubuntu systems), Podman is not linked to systemd and doesn&#8217;t restart when the host is restarted. This behavior is fixed running the following commands:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">sudo systemctl enable podman.service
+sudo systemctl restart podman.service
+sudo systemctl enable podman-restart.service
+sudo systemctl restart podman-restart.service</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In addition to that, we must be sure that the user processes (containers in our case) will remain active once disconnecting from a remote SSH shell. This is accomplished enabling lingering:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-asciidoc hljs" data-lang="asciidoc">sudo loginctl enable-linger $USER
+loginctl show-user $USER
+
+UID=1000
+GID=1000
+Name=ubuntu
+Timestamp=Wed 2026-09-09 07:16:55 UTC
+TimestampMonotonic=1415950583854
+RuntimePath=/run/user/1000
+Service=user@1000.service
+Slice=user-1000.slice
+Display=485
+State=active
+Sessions=485 457
+IdleHint=no
+IdleSinceHint=0
+IdleSinceHintMonotonic=0
+Linger=yes</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The last line, <strong>Linger=yes</strong>, proves that lingering is active.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
